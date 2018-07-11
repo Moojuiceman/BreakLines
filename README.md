@@ -31,3 +31,7 @@ Multiple selections, break every 2 lines
 | Before | After |
 | :----- | :---- |
 | ![selection before](https://user-images.githubusercontent.com/7610940/42520182-8f452292-845d-11e8-81a3-d35aece49a42.png) | ![selection after](https://user-images.githubusercontent.com/7610940/42520184-910cdad4-845d-11e8-8cda-fafd1090acfb.png) |
+
+## License
+
+See [LICENSE.md](./LICENSE.md)
