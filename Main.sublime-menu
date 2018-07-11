@@ -15,19 +15,19 @@
                         "caption": "Break every 10 lines",
                         "id": "10",
                         "command": "break_lines",
-                        "args": {"break_gap": "10"}
+                        "args": {"break_gap": 10}
                     },
                     {
                         "caption": "Break every 100 lines",
                         "id": "100",
                         "command": "break_lines",
-                        "args": {"break_gap": "100"}
+                        "args": {"break_gap": 100}
                     },
                     {
                         "caption": "Break every 1000 lines",
                         "id": "1000",
                         "command": "break_lines",
-                        "args": {"break_gap": "1000"}
+                        "args": {"break_gap": 1000}
                     },
                     {
                         "caption": "Break every X lines",
