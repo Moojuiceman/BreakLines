@@ -15,20 +15,17 @@ class PromptBreakLinesCommand(sublime_plugin.TextCommand):
 class BreakLinesCommand(sublime_plugin.TextCommand):
 
     def run(self, edit, break_gap):
-        try:
-            selections = [region for region in self.view.sel() if not region.empty()]
+        selections = [region for region in self.view.sel() if not region.empty()]
 
-            if selections:
-                # Break non-empty selections
-                # Reverse the list or adding breaks will shift later lines
-                [self.break_lines(edit, region, break_gap) for region in reversed(selections)]
+        if selections:
+            # Break non-empty selections
+            # Reverse the list or adding breaks will shift later lines
+            [self.break_lines(edit, region, break_gap) for region in reversed(selections)]
 
-            else:
-                # If all selections were empty, break whole file
-                all = sublime.Region(0, self.view.size())
-                self.break_lines(edit, all, break_gap)
-        except ValueError:
-            pass
+        else:
+            # If all selections were empty, break whole file
+            all = sublime.Region(0, self.view.size())
+            self.break_lines(edit, all, break_gap)
 
 
     def break_lines(self, edit, region, break_gap):
